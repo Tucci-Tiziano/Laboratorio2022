@@ -10,6 +10,7 @@ int main(){
     char letra;
     int cont_min=0;
     int cont_mas=0;
+    int cont_otros=0;
     cout<<"ingrese una palabra\n";
     cin>>palabra;
     tam=palabra.size();
@@ -21,13 +22,19 @@ int main(){
         if (mayus){
             cont_mas++;
         }
-        else{
+        else if (minus) 
+        {
             cont_min++;
         }
+        else {
+            cont_otros++;
+        }
+
         lugar++;
     }
     cout<<"cantidad de mayusculas son:" << cont_mas <<endl;
     cout<<"cantidad de minusculas son:" << cont_min <<endl;
+    cout<<"otros:" << cont_otros <<endl;
 }
 
 
