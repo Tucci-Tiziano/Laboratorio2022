@@ -16,7 +16,6 @@ while (posicion<palabra.size()){
         palabra[posicion]=' ';
     }
     posicion++;
-
 }
 cout<<"tu_palabra_sin_comas_es:";
 cout<<palabra<<endl;

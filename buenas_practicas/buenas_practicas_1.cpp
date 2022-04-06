@@ -13,9 +13,7 @@ cin>>num_1;
 posicion=num_1-1;
 while (posicion>0){//lee cada numero atras del ingresado por el usuario y revisa si son impares
     resto=posicion % 2;
-    if (resto==1){//revisa que sea impar
-        total=total+posicion;//acumula la suma de los numeros
-    }
+    (resto==1) ? total=total+posicion: 1-1;//revisa que sea impar Y acumula la suma de los numeros
     posicion--;
 }
 cout<<total<<endl;

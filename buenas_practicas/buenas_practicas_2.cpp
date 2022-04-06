@@ -15,12 +15,7 @@ else{
     resto_1=num_1 % 2;
     resto_2=num_1 % 3;
     if (resto_1>0){ //si el numero tiene resto dividiendo por 2
-        if (resto_2>0){ //si el numero tiene resto dividiendo por 3
-            cout<<"es_primo\n";
-        }
-        else{
-           cout<<"no_es_primo\n"; 
-        } 
+        (resto_2>0) ?  cout<<"es_primo\n" : cout<<"no_es_primo\n"; //si el numero tiene resto dividiendo por 3
     }          
     else{
         cout<<"no_es_primo\n";

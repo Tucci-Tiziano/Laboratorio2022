@@ -1,21 +1,17 @@
 #include <iostream>
-
 using namespace std;
 
 int main(){
 int num_1;
-int figo1=0;
-int figo2=1;
-int figo3;
-int l=99;
+int figo1=0;//primer numero de figonacci
+int figo2=1;//segundo numero de figonacci
+int figo3=0;//se le asigna un valor para que entra al while
 cout<<"ingresar_numero\n";
 cin>>num_1;
-while (num_1!=figo3){
-    num_1++;
+while (figo3<num_1){//busca el primer numero de figgonacci que supere al introducido
     figo3=figo2+figo1;
     figo1=figo2;
     figo2=figo3;
 }
-cout<<num_1
+ cout<<figo3<<endl;
 }
-
