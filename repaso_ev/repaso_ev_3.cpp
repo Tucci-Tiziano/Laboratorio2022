@@ -5,8 +5,8 @@ int main(){
  int num;
  int tam;
  int posicion=0;
- int pos;
- string numeros;
+ int pos=0;
+ int numeros=0;
  string palabra;
  char letra;
  cout << "ingresar palabra:"<<endl;
@@ -17,8 +17,9 @@ int main(){
  while (posicion<tam){
      if (palabra[posicion]==letra){
          numeros=posicion;
+         cout<<numeros<<endl;
      }
+     pos++;
      posicion++;
  }
- cout>>numeros[0]<<endl;
 }
