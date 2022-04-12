@@ -13,17 +13,18 @@ int main(){
  cin>>palabra;
  cout << "ingresar un numero:"<<endl;
  cin>>num;
- num2=size-num;
  palabra2=palabra;
  size=palabra.size();
+ num2=size-num;
  while (num2<size){
      cout<<palabra[num2];
      num2++;
  }
+ num2=size-num;
  while (posicion<num2){
    cout<<palabra[posicion];
    posicion++;
  }
- cout<<palabra<<endl;
+ cout<<"\n";
 }
 
