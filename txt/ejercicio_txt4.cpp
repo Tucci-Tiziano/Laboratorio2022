@@ -1,36 +1,37 @@
 #include <fstream>
 #include <iostream>
-
 using namespace std;
-
 int main(){
     ifstream archivo;
     string frase;
     string ubicacion;
-    string nombre;
+    string linea;
     int num1;
     int num2;
-    int sum;
-    int cont=1;
-
+    int sumf;
+    int sumr;
+    int cant_lin;
     cout<<"ingresar nombre del archivo"<<endl;
     cin>>ubicacion;
-
     archivo.open(ubicacion);
-    
     if (archivo.is_open()){
-        while(cont<5){
-        getline(archivo, frase, ' ');
-        num1=frase[0]-48;
-        getline(archivo, frase, ' ');
-        num2=frase[1]-48;
-        getline(archivo, frase, ' ');
-        sum=frase[1]-48;
-        if (num1+num2!=sum){
-            cout<<"La linea " << (cont) << " es incorecta. Deberia sumar " << (num1) << '+' << (num2) << '=' << (num1+num2) << " y dio " << (sum) <<endl;
+        while(getline(archivo)<linea){
+            for(int i=0,i<=cant_lin, i++){
+                archivo >> num1 >> num2 >> sumf;
+             if(num1+num2!=sumr){
+                cout<< "error en la linea" <<
+            }
+            }
+
         }
-        cont++;
-        }
-    }
+
+
+
+
+
+
+
+
+
     archivo.close();
 } 

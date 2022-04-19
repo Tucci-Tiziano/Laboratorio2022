@@ -23,6 +23,6 @@ int main(){
             }
         }
     }
-    cout<<contador<<endl;
+    cout<<"la cantidad de veces que se repite el nombre es:" << contador <<endl;
     archivo.close();
 }
