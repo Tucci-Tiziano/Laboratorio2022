@@ -11,8 +11,8 @@ int main(){
         cin>>ubicacion;
         archivo.open(ubicacion);
         if (archivo.is_open()){
-            archivo << frase;
+            archivo >> frase;
         }
-        cout<<frase
+        cout<<frase<<endl;
         archivo.close();
 }
