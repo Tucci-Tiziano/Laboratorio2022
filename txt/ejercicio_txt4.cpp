@@ -19,7 +19,7 @@ int main(){
             for(int i=0,i<=cant_lin, i++){
                 archivo >> num1 >> num2 >> sumf;
              if(num1+num2!=sumr){
-                cout<< "error en la linea" <<
+                cout<< "error en la linea" << endl;
             }
             }
 

@@ -29,14 +29,13 @@ int main(){
 
 
     if ((archivo1.is_open()) && archivo2.is_open() && archivo3.is_open()){
-        
         while(getline(archivo1, frase1)){
             getline(archivo2, frase2);
             if(frase1!=frase2){
                 archivo3 << frase1 <<endl;
+                archivo3 << frase2 <<endl;
             }
-        }       
-        
+        }          
     }
     archivo1.close();
     archivo2.close();
