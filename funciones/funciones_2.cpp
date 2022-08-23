@@ -5,7 +5,7 @@ void horario(int horas, int min){
     
     if (horas>12){
         if (min>5){
-            cout<<"hora:"<<(horas-36)*(-1)-1<<endl;
+            cout<<"hora:"<<(horas-35)*(-1)<<endl;
             cout<<"minutos:"<<65-min<<endl;
         }
         else{
