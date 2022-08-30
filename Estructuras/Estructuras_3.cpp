@@ -40,6 +40,17 @@ vector<animales> cargar_vector(){
         return vector_animales;
 }
 
+    void promedio_ojos(vector<animales> vector){
+        animales p1;
+        int ojos_total=0, cont=0, promedio;
+        while (cont<10){
+        p1=vector[cont];
+        ojos_total=ojos_total+p1.ojos;
+        cont++;
+        }
+        promedio=ojos_total/10;
+        cout<<"promedio de ojos: "<<promedio<<endl;
+    }
 
 
 
@@ -47,7 +58,8 @@ vector<animales> cargar_vector(){
 int main(){
     vector<animales> animal;
     animal=cargar_vector();
-    
+    promedio_ojos(animal);
+
 
 
 }
