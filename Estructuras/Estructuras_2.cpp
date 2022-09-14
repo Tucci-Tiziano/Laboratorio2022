@@ -9,9 +9,6 @@ struct Punto{
     int y;
 };
 
-/*Usando el struct Punto, se quiere implementar una función que 
-reciba un vector de puntos y retorne si hubo al menos un par de puntos iguales o no.*/
-
 vector<Punto> cargar_punto(){
     Punto p1;
     bool seguir=true;
@@ -19,7 +16,7 @@ vector<Punto> cargar_punto(){
     int x, y, cont=1;
     vector<Punto> vector;
 
-    while(seguir){
+    while(seguir==true){
         cout<<"ingresar x del vector "<<cont<<endl;
         cin>>p1.x;
         cout<<"ingresar y del vector "<<cont<<endl;

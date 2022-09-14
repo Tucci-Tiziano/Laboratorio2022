@@ -2,8 +2,6 @@
 #include <fstream>
 #include <vector>
 using namespace std;
-
-
 struct Alumno{
     string nombre;
     int edad;
@@ -14,19 +12,14 @@ struct Alumno_promedio{
     int edad;
     float promedio;
 };
-
-
-
 vector<Alumno> cargar_alumnos(){
     Alumno p1;
     vector<Alumno> vector_alumno;
     int cont=1, cont2=1, cont3=1, cant_notas, cant_alumnos, nota, edad;
     string nombre;
     vector<float> notas;
-
     cout<<"cuantos alumnos quiere cargar: "<<endl;
     cin>>cant_alumnos;
-
     while(cant_alumnos>0){
         cout<<"Alumno "<<cont<<":"<<endl;
         cout<<"Nombre: "<<endl;
@@ -52,18 +45,15 @@ vector<Alumno> cargar_alumnos(){
         cant_alumnos--;
         vector_alumno.push_back(p1);
         cont++;
-
     }
-        return vector_alumno;
+    return vector_alumno;
 }
-
 vector<Alumno_promedio> promedios(vector<Alumno> vector1){
     Alumno_promedio p1;
     Alumno p2;
     int size, size2, notas=0, cont2=0, cont=0;
     vector<Alumno_promedio> promedios;
     size=vector1.size();
-    
     while(cont<size){
         p2=vector1[cont];
         p1.nombre=p2.nombre;
@@ -93,7 +83,6 @@ void promedio_alto(vector<Alumno_promedio> vector, int edad){
             nota=p1.promedio;
             nombre=p1.nombre;
         }
-
         cont++;
     }
     if(nota==0){
@@ -103,9 +92,6 @@ void promedio_alto(vector<Alumno_promedio> vector, int edad){
         cout<<"El promedio mas alto es: "<<endl<<"Nombre:"<<nombre<<endl<<"Promedio: "<<nota<<endl;
     }
 }
-
-
-
 int main(){
     vector<Alumno> vector;
     int edad;
@@ -113,7 +99,4 @@ int main(){
     cout<<"edad a buscar: "<<endl;
     cin>>edad;
     promedio_alto(promedios(vector),edad);
-
-
-
 }
