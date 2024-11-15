@@ -1,9 +1,0 @@
-Hola, el ejercicio de matrices numero 11 no esta completo solo esta parcialmente 
-pero funciona. Tampoco estoy seguro de la consigna, pero se podria decir que es
-un codigo volatil, osea que no guarda la infomacion al dejar de ejecutarse.
-
-No estoy seguro de la consigna de estructuras numero 7 pero el codigo esta muy 
-bueno y funciona.
-
-chau
-._Tiziano Tucci_.
